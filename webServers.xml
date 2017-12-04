@@ -17,14 +17,6 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
-      <webServer id="014f23ef-c990-4b08-9a41-a9b12fe6efca" name="Petstory" url="http://192.168.1.220/">
-        <fileTransfer host="192.168.1.220" port="22" rootFolder="/var/petstory" accessType="SFTP">
-          <advancedOptions>
-            <advancedOptions controlEncoding="UTF-8" dataProtectionLevel="Private" />
-          </advancedOptions>
-          <option name="port" value="22" />
-        </fileTransfer>
-      </webServer>
     </option>
   </component>
 </application>
