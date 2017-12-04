@@ -1,0 +1,30 @@
+<application>
+  <component name="WebServers">
+    <sftpAdvancedGlobalOptions>
+      <SftpAdvancedOptions hashKnownHosts="false">
+        <option name="hashHost" value="false" />
+      </SftpAdvancedOptions>
+    </sftpAdvancedGlobalOptions>
+    <option name="servers">
+      <webServer id="68c0e8ac-7899-439d-ba44-98643b5d2a5a" name="vetmanager" url="http://192.168.1.220">
+        <fileTransfer port="0" mountedRoot="D:\vm" accessType="MOUNT" />
+      </webServer>
+      <webServer id="65135f2e-797c-42d9-849b-6e9d63b66a14" name="vmsftp" url="http://192.168.1.220">
+        <fileTransfer host="192.168.1.220" port="22" rootFolder="/var/www" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions controlEncoding="utf-8" dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="014f23ef-c990-4b08-9a41-a9b12fe6efca" name="Petstory" url="http://192.168.1.220/">
+        <fileTransfer host="192.168.1.220" port="22" rootFolder="/var/petstory" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions controlEncoding="UTF-8" dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</application>
