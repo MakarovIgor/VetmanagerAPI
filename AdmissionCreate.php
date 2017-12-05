@@ -8,8 +8,7 @@ $admissionData = array(
         "admission_date" => "2017-12-05 12:12:12",
         "admission_length" => "00:00:00",
         "status" => "not_approved",
-        "client_id" => 14,
-        "status" => "save"
+        "client_id" => 14
 );
 // create admission with params
 $admission = $vetmanager->request('admission', '', $admissionData, 'POST');
