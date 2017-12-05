@@ -17,12 +17,14 @@ Work with API Vetmanager
     &filter=[{'property':'title', 'value':'some value'},{'property':'comment', 'value':'You need a REST', 'operator':'='}]
     
 #Доступные операторы в фильтре:
+    
     ‘=’, ‘!=’ | ‘<>’
     ‘<‘, ‘<=’, ‘>’, ‘>=’
     ‘in’, ‘not in’ ( в занчение value необходимо передавать массив )
     ‘like’
     
 #Пример фильтрации данных
+    
     limit=2&offset=1&filter = [
     {"property": "id", "value" : 50, "operator": ">="}
     , {"property": "user_id", "value" : [1, 5, 10, 14], "operator": "in"}
