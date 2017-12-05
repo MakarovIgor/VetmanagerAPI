@@ -16,15 +16,16 @@ Work with API Vetmanager
     &sort=[{'property':'title','direction':'ASC'}]
     &filter=[{'property':'title', 'value':'some value'},{'property':'comment', 'value':'You need a REST', 'operator':'='}]
     
-#Доступные операторы в фильтре:
+Доступные операторы в фильтре:
+=============
     
     ‘=’, ‘!=’ | ‘<>’
     ‘<‘, ‘<=’, ‘>’, ‘>=’
     ‘in’, ‘not in’ ( в занчение value необходимо передавать массив )
     ‘like’
     
-#Пример фильтрации данных
-    
+Пример фильтрации данных
+=============
     limit=2&offset=1&filter = [
     {"property": "id", "value" : 50, "operator": ">="}
     , {"property": "user_id", "value" : [1, 5, 10, 14], "operator": "in"}
@@ -33,7 +34,8 @@ Work with API Vetmanager
     , {"property": "date", "value" : "2013-01-31", "operator": "<="}
     , {"property": "type", "value" : 2, "operator": "!="}
     ]
-#Примеры из коммандной строки
+Примеры из коммандной строки
+=============
 GET
 
     #List
