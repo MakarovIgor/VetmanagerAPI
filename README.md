@@ -7,7 +7,7 @@ Work with API Vetmanager
 
 Заголовки
 =========
-    X_REST_API_KEY — обязательный параметр, ключ авторизации
+    X-REST-API-KEY — обязательный параметр, ключ авторизации
     X_REST_TIME_ZONE — необязательный параметр, значение временной зоны, если пусто, о используется временная зона сервера, формат (+/-)HH:MM
 
 Основные Запросы:
@@ -48,31 +48,31 @@ Work with API Vetmanager
 GET
 
     #List
-          curl -i -H "Accept: application/json" -H "X_REST_API_KEY: some_key" http://test.vetmanager.ru/rest/api/sample/
+          curl -i -H "Accept: application/json" -H "X-REST-API-KEY: some_key" http://test.vetmanager.ru/rest/api/sample/
     
     #View
     
-          curl -l -H "Accept: application/json" -H "X_REST_API_KEY: some_key" http://test.vetmanager.ru/rest/api/sample/174
+          curl -l -H "Accept: application/json" -H "X-REST-API-KEY: some_key" http://test.vetmanager.ru/rest/api/sample/174
 POST
 
     Create
-          curl -l -H "Accept: application/json" -H "X_REST_API_KEY: some_key" -X \
+          curl -l -H "Accept: application/json" -H "X-REST-API-KEY: some_key" -X \
     POST -d '{"id":"175","name":"Six Alive one ever Updated Again","desc":"It really is or should be at an honor","notes":"this is a note"}' \
     http://test.vetmanager.ru/rest/api/sample
     
-          curl -l -H "Accept: application/json" -H "X_REST_API_KEY: some_key" -X \
+          curl -l -H "Accept: application/json" -H "X-REST-API-KEY: some_key" -X \
     POST -d '[{"id":"175","name":"Six Alive one ever Updated Again","desc":"It really is or should be at an honor","notes":"this is a note"}, \
     {"id":"176","name":"First.3 one ever Updated Again","desc":"It really is or should be at an honor","notes":"this is a note"}]' \
     http://test.vetmanager.ru/rest/api/sample
 PUT
 
     Update
-        curl -l -H "Accept: application/json" -H "X_REST_API_KEY: some_key" -H "X-HTTP-Method-Override: PUT" -X \
+        curl -l -H "Accept: application/json" -H "X-REST-API-KEY: some_key" -H "X-HTTP-Method-Override: PUT" -X \
     PUT -d '{"id":"174","name":"Five.1 Alive one ever Updated Again","desc":"It really is or should be at an honor","notes":"this is a note"}' \
     http://test.vetmanager.ru/rest/api/sample/174
 DELETE
 
-    curl -l -H "Accept: application/json" -H "X_REST_API_KEY: some_key" -H "X-HTTP-Method-Override: DELETE" -X DELETE http://test.vetmanager.ru/rest/api/sample/175
+    curl -l -H "Accept: application/json" -H "X-REST-API-KEY: some_key" -H "X-HTTP-Method-Override: DELETE" -X DELETE http://test.vetmanager.ru/rest/api/sample/175
     
 Подробная информация по работе с REST API Vetmanager в документации Wiki
 =================================================
