@@ -8,7 +8,7 @@ Work with API Vetmanager
 Заголовки
 =========
     X-REST-API-KEY — обязательный параметр, ключ авторизации
-    X_REST_TIME_ZONE — необязательный параметр, значение временной зоны, если пусто, о используется временная зона сервера, формат (+/-)HH:MM
+    X_REST_TIME_ZONE — необязательный параметр, значение временной зоны, если пусто, о используется временная зона сервера, формат: Europe/Kiev
 
 Основные Запросы:
 ================
@@ -74,6 +74,4 @@ DELETE
 
     curl -l -H "Accept: application/json" -H "X-REST-API-KEY: some_key" -H "X-HTTP-Method-Override: DELETE" -X DELETE http://test.vetmanager.ru/rest/api/sample/175
     
-Подробная информация по работе с REST API Vetmanager в документации Wiki
-=================================================
-http://wiki.vetmanager.ru/index.php/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:REST_API
+Подробнее в [документации](https://help.vetmanager.cloud/article/3029).
